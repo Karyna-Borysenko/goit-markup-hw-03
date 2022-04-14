@@ -33,6 +33,12 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -74,6 +80,23 @@ button {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-contacts {
+  display: flex;
 }
 
 .header-logo {
@@ -211,6 +234,11 @@ button {
   color: var(--main-color);
 }
 
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-secondary-title,
 .team-text {
   font-size: 16px;
@@ -218,15 +246,10 @@ button {
 }
 
 .team-secondary-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
   color: var(--main-color);
-}
-
-.team-text {
-  margin-bottom: 30px;
 }
 
 /*------------------------------------------------------------------portfolio.html------------------------------------------------------------------*/
@@ -255,8 +278,11 @@ button {
   background-color: var(--accent-color);
 }
 
+.portfolio-card {
+  padding: 20px 24px 20px 24px;
+}
+
 .porfolio-secondary-title {
-  margin-top: 20px;
   margin-bottom: 4px;
 
   font-size: 18px;
