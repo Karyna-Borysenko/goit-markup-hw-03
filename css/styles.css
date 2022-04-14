@@ -14,6 +14,40 @@ body {
   color: var(--body-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  outline: 10px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -36,6 +70,11 @@ body {
 }
 
 /*------------------------------------------------------------------Шапка сайта-header------------------------------------------------------------------*/
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 .header-logo {
   font-family: "Raleway", "Roboto", sans-serif;
@@ -84,19 +123,37 @@ body {
 
 /*------------Cекция Герой-Hero------------*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: #2f303a;
+  text-align: center;
 }
+
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 700px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--used-color);
 }
 
 .hero-button {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  min-width: 200px;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -105,7 +162,6 @@ body {
   align-items: center;
   letter-spacing: 0.06em;
   border-style: none;
-  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--used-color);
 }
@@ -113,6 +169,8 @@ body {
 /*------------Секция Наши преимущества------------*/
 
 .benefits-secondary-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -125,7 +183,13 @@ body {
 
 /*------------Секция Чем мы занимаемся------------*/
 
+.speciality {
+  padding-top: 0;
+}
+
 .speciality-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -136,12 +200,14 @@ body {
 
 .team {
   background-color: #f5f4fa;
+  text-align: center;
 }
 
 .team-main-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   color: var(--main-color);
 }
 
@@ -149,18 +215,28 @@ body {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .team-secondary-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   color: var(--main-color);
+}
+
+.team-text {
+  margin-bottom: 30px;
 }
 
 /*------------------------------------------------------------------portfolio.html------------------------------------------------------------------*/
 /*--Оснавная часть-main section-->*/
 
 /*------------Cекция Portfolio------------*/
+
+.portfolio-filter {
+  margin-bottom: 34px;
+}
 
 .portfolio-button {
   font-family: inherit;
@@ -170,7 +246,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   border-style: none;
-  cursor: pointer;
   color: var(--main-color);
 }
 
@@ -181,6 +256,9 @@ body {
 }
 
 .porfolio-secondary-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -196,10 +274,16 @@ body {
 /*------------------------------------------------------------------Подвал сайта-Footer------------------------------------------------------------------*/
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -220,10 +304,15 @@ body {
 }
 
 .footer-item-address {
+  margin-bottom: 9px;
   color: var(--used-color);
 }
 
-.footer-item-mail,
+.footer-item-mail {
+  margin-bottom: 9px;
+  color: var(--used-transparent-color);
+}
+
 .footer-item-phone {
   color: var(--used-transparent-color);
 }
