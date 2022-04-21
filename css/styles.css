@@ -26,11 +26,6 @@ h6 {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
 button {
   cursor: pointer;
 }
@@ -60,6 +55,8 @@ img {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .visually-hidden {
@@ -355,7 +352,7 @@ img {
 }
 
 .portfolio-content {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 24px;
   background-color: var(--used-color);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
